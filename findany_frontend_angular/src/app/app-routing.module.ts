@@ -11,7 +11,6 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LogoutComponent } from './logout/logout.component';
 import { IntroComponent } from './intro/intro.component';
-import { ServiceebsComponent } from './serviceebs/serviceebs.component';
 import { TeamsComponent } from './teams/teams.component';
 import { AboutComponent } from './about/about.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
@@ -28,9 +27,7 @@ const routes: Routes = [
     path: 'ourIntro', component: IntroComponent
     
     },
-    {
-    path: 'ourServices', component: ServiceebsComponent
-  },
+  
    {
     path: 'ourTeam', component: TeamsComponent
   },

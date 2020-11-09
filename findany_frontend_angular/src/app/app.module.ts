@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
-import { ServiceebsComponent } from './serviceebs/serviceebs.component';
 import { TeamsComponent } from './teams/teams.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,19 +25,19 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { IonicModule } from '@ionic/angular';
 import { LogoutComponent } from './logout/logout.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ServicefindAnyComponent } from './servicefind-any/servicefind-any.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationbarComponent,
     HeaderComponent,
     IntroComponent,
-    ServiceebsComponent,
     TeamsComponent,
     AboutComponent,
     FooterComponent,
     AdminComponent,
     HomeComponent,
-    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent,
+    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent,
 
   ],
   imports: [
