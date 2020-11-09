@@ -25,13 +25,6 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { IonicModule } from '@ionic/angular';
 import { LogoutComponent } from './logout/logout.component';
-import { CreditCardFormComponent } from './credit-card-form/credit-card-form.component';
-import { AddBillViewComponent } from './bills/add-bill-view/add-bill-view.component';
-import { BillviewComponent } from './bills/billview/billview.component';
-import { CustomerviewComponent } from './bills/customerview/customerview.component';
-import { UpdateBillViewComponent } from './bills/update-bill-view/update-bill-view.component';
-import { ViewallCustomersComponent } from './bills/viewall-customers/viewall-customers.component';
-import { ViewallbillsComponent } from './bills/viewallbills/viewallbills.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 @NgModule({
   declarations: [
@@ -45,13 +38,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     FooterComponent,
     AdminComponent,
     HomeComponent,
-    AddBillViewComponent,
-    BillviewComponent,
-    CustomerviewComponent,
-    UpdateBillViewComponent,
-    ViewallCustomersComponent,
-    ViewallbillsComponent,
-    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, CreditCardFormComponent, ResetPasswordComponent,
+    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent,
 
   ],
   imports: [

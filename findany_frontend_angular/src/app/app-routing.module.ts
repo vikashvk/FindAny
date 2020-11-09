@@ -10,12 +10,6 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 import { AuthGuardService } from './services/auth-guard.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LogoutComponent } from './logout/logout.component';
-import { UpdateBillViewComponent } from './bills/update-bill-view/update-bill-view.component';
-import { BillviewComponent } from './bills/billview/billview.component';
-import { AddBillViewComponent } from './bills/add-bill-view/add-bill-view.component';
-import { CustomerviewComponent } from './bills/customerview/customerview.component';
-import { ViewallbillsComponent } from './bills/viewallbills/viewallbills.component';
-import { ViewallCustomersComponent } from './bills/viewall-customers/viewall-customers.component';
 import { IntroComponent } from './intro/intro.component';
 import { ServiceebsComponent } from './serviceebs/serviceebs.component';
 import { TeamsComponent } from './teams/teams.component';
@@ -56,9 +50,7 @@ const routes: Routes = [
   {
     path: 'reset-password', component: ResetPasswordComponent
   },
-  {
-    path: 'payment', component: CreditCardFormComponent
-  },
+
 
   {
     path: 'register', component: UserRegistrationComponent
@@ -73,25 +65,6 @@ const routes: Routes = [
     path: 'user'
     , loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule)
     , canActivateChild:[AuthGuardService]
-  },
-  {
-    path: 'customerView', component: CustomerviewComponent
-  },
-  {
-    path: 'addbill/:custId', component: AddBillViewComponent
-  },
-  {
-    path: 'billdetails/:id', component: BillviewComponent
-  },
-  {
-    path: 'updateBill/:id', component: UpdateBillViewComponent
-  }
-  ,
-  {
-    path: 'viewallbill', component: ViewallbillsComponent
-  },
-  {
-    path: 'ViewallCustomer', component: ViewallCustomersComponent
   },
   {
     path: '**', component: PageNotFoundComponent
