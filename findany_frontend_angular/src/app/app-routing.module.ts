@@ -14,6 +14,8 @@ import { IntroComponent } from './intro/intro.component';
 import { TeamsComponent } from './teams/teams.component';
 import { AboutComponent } from './about/about.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+//import { BillviewComponent } from './billview/billview.component';
+import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
 
 
 const routes: Routes = [
@@ -59,10 +61,14 @@ const routes: Routes = [
     path: 'logout', component: LogoutComponent
   },
   {
+    path:'adminProductList',component:AdminProductListComponent
+  },
+  {
     path: 'user'
     , loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule)
     , canActivateChild:[AuthGuardService]
   },
+  
   {
     path: '**', component: PageNotFoundComponent
   }

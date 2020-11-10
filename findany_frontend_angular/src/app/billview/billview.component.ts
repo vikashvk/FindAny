@@ -1,7 +1,8 @@
+/** 
 import { Component, OnInit } from '@angular/core';
 import { Bills } from '../../models/bills';
 import { Observable } from 'rxjs';
-import {ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AdminService } from '../../services/admin.service';
 
 @Component({
@@ -13,7 +14,7 @@ export class BillviewComponent implements OnInit {
   bill: Observable<Bills[]>;
   id: number;
 
-  constructor(private route: ActivatedRoute,private router: Router, private adminService: AdminService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private adminService: AdminService) { }
 
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get('id'));
@@ -35,8 +36,9 @@ export class BillviewComponent implements OnInit {
         error => console.log(error));
   }
 
-  updateBill(id: number){
+  updateBill(id: number) {
     this.router.navigate(['updateBill', id]);
   }
 
 }
+*/

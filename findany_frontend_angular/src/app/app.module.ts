@@ -26,6 +26,7 @@ import { IonicModule } from '@ionic/angular';
 import { LogoutComponent } from './logout/logout.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { ServicefindAnyComponent } from './servicefind-any/servicefind-any.component';
+import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,7 @@ import { ServicefindAnyComponent } from './servicefind-any/servicefind-any.compo
     FooterComponent,
     AdminComponent,
     HomeComponent,
-    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent,
+    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent,
 
   ],
   imports: [
