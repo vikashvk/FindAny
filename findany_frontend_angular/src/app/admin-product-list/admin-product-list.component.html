@@ -11,11 +11,12 @@
                 <th><h6>Category</h6></th>
                 <th><h6>Name</h6></th>
                 <th><h6>Price</h6></th>
+                <th><h6>Actions</h6>></th>
                 
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let pro of productList | async">
+              <tr *ngFor="let pro of product | async">
                 <td>{{pro.serialNo}}</td>
                 <td>{{pro.category}}</td>
                 <td>{{pro.name}}</td>

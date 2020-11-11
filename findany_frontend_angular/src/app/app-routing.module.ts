@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 //import { BillviewComponent } from './billview/billview.component';
 import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
+import { AdminAddProductComponent } from './admin-add-product/admin-add-product.component';
 
 
 const routes: Routes = [
@@ -63,6 +64,10 @@ const routes: Routes = [
   {
     path:'adminProductList',component:AdminProductListComponent
   },
+  {
+    path:'adminAddProduct',component:AdminAddProductComponent
+  },
+
   {
     path: 'user'
     , loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule)

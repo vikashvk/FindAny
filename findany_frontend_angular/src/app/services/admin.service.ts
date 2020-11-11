@@ -11,6 +11,9 @@ export class AdminService {
 
   constructor(private http: HttpClient) { 
   }
+  
+
+
   getAllProductList(serialNo:number): Observable<any> {
     return this.http.get(`${this.baseUrl}` + '/adminProductList'+serialNo);
   }
