@@ -16,6 +16,8 @@ import { AboutComponent } from './about/about.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { CustomerRegestrationComponent } from './customer-regestration/customer-regestration.component';
+import { CustomerLoginComponent } from './customer-login/customer-login.component';
 
 
 const routes: Routes = [
@@ -43,7 +45,7 @@ const routes: Routes = [
     path: 'adminp', component: AdminpageComponent
   },
   {
-    path: 'login', component: UserLoginComponent
+    path: 'login', component: CustomerLoginComponent
   },
   
   {
@@ -52,7 +54,7 @@ const routes: Routes = [
 
 
   {
-    path: 'register', component: UserRegistrationComponent
+    path: 'register', component: CustomerRegestrationComponent
   },
   {
     path: 'oauth2-redirect', component: RedirectHandlerComponent

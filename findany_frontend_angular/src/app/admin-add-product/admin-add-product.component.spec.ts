@@ -1,21 +1,20 @@
-/** 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BillviewComponent } from './billview.component';
+import { AdminAddProductComponent } from './admin-add-product.component';
 
-describe('BillviewComponent', () => {
-  let component: BillviewComponent;
-  let fixture: ComponentFixture<BillviewComponent>;
+describe('AdminAddProductComponent', () => {
+  let component: AdminAddProductComponent;
+  let fixture: ComponentFixture<AdminAddProductComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BillviewComponent ]
+      declarations: [ AdminAddProductComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BillviewComponent);
+    fixture = TestBed.createComponent(AdminAddProductComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -23,4 +22,4 @@ describe('BillviewComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});*/
+});

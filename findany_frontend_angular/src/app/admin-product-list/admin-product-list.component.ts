@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
-import { ProductList } from '../models/ProductList';
+import { Product } from '../models/Product';
 import { AdminService } from '../services/admin.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { AdminService } from '../services/admin.service';
   styleUrls: ['./admin-product-list.component.css']
 })
 export class AdminProductListComponent implements OnInit {
-  productList: Observable<ProductList[]>;
+  product: Observable<Product[]>;
   serialNo: number;
 
   constructor( private route: ActivatedRoute, private router: Router, private adminService: AdminService) { }
@@ -24,7 +24,7 @@ export class AdminProductListComponent implements OnInit {
   }
   reloadData() {
     debugger
-    this.productList = this.adminService.getAllProductList(this.serialNo);
+    this.product = this.adminService.getAllProductList(this.serialNo);
   }
 
 }

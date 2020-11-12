@@ -1,4 +1,4 @@
-export class ProductList {
+export class Product {
     serialNo: number;
     category: string;
     name: string;
