@@ -42,6 +42,7 @@ import { CustomerServicesComponent } from './customer-services/customer-services
     FooterComponent,
     AdminComponent,
     HomeComponent,
+    AddProductComponent,
     AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, CustomerLoginComponent, CustomerRegestrationComponent, CustomerServicesComponent,
 
   ],
