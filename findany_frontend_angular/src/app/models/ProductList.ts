@@ -3,5 +3,4 @@ export class ProductList {
     category: string;
     name: string;
     price: number;
-    
 }

@@ -11,9 +11,13 @@ export class AdminService {
 
   constructor(private http: HttpClient) { 
   }
+  createProduct(product: Object): Observable<Object> {
+    return this.http.post(`${this.baseUrl}` + '/addProduct', product);
+  }
   getAllProductList(serialNo:number): Observable<any> {
     return this.http.get(`${this.baseUrl}` + '/adminProductList'+serialNo);
   }
+
 
   getCustomerList(): Observable<any> {
     return this.http.get(`${this.baseUrl}` + '/Customers');
@@ -26,9 +30,6 @@ export class AdminService {
     return this.http.get(`${this.baseUrl}` + '/Bills/all/'+custId);
   }
 
-  createBill(bill: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}` + '/addBill', bill);
-  }
 
   deleteBill(id: any): Observable<any>{
     return this.http.delete(`${this.baseUrl}` + '/deleteBill/' + `${id}`, { responseType : 'text'});

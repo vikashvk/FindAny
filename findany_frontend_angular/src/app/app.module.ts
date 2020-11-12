@@ -27,6 +27,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { ServicefindAnyComponent } from './servicefind-any/servicefind-any.component';
 import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
+import { AddProductComponent } from './add-product/add-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,7 @@ import { AdminProductListComponent } from './admin-product-list/admin-product-li
     FooterComponent,
     AdminComponent,
     HomeComponent,
-    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent,
+    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, AddProductComponent,
 
   ],
   imports: [

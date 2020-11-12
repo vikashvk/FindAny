@@ -14,8 +14,8 @@ import { IntroComponent } from './intro/intro.component';
 import { TeamsComponent } from './teams/teams.component';
 import { AboutComponent } from './about/about.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
-//import { BillviewComponent } from './billview/billview.component';
 import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 const routes: Routes = [
@@ -62,6 +62,9 @@ const routes: Routes = [
   },
   {
     path:'adminProductList',component:AdminProductListComponent
+  },
+  {
+    path:'addProductList',component:AddProductComponent
   },
   {
     path: 'user'
