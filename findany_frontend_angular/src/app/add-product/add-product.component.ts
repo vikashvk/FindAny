@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProductList } from '../models/ProductList';
+import { Product } from '../models/Product';
 import { AdminService } from '../services/admin.service';
+
 
 @Component({
   selector: 'app-add-product',
@@ -9,7 +10,7 @@ import { AdminService } from '../services/admin.service';
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent implements OnInit {
-  product: ProductList = new ProductList();
+  product: Product = new Product();
   submitted = false;
   serialNo: number;
   constructor(private route: ActivatedRoute, private router: Router, private adminService: AdminService) { }
@@ -22,7 +23,7 @@ export class AddProductComponent implements OnInit {
 
   newproduct(): void {
     this.submitted = false;
-    this.product = new ProductList();
+    this.product = new Product();
   }
 
   save() {
