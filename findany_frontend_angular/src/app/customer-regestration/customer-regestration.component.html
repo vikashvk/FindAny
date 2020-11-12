@@ -1,0 +1,78 @@
+<div class="login">
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="login100-more" style="background-image: url('assets/images/bg-01.jpg');"></div>
+  
+        <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+          <form #myform ="ngForm"(ngSubmit)="register(myform.value)"class="login100-form validate-form"
+            >
+            <span class="login100-form-title p-b-5">
+              Register Yourself!
+            </span>
+            
+            
+            <div class="wrap-input100 validate-input"
+              >
+              <span class="label-input100">Name</span>
+              <input class="form-control" placeholder="Enter Name" type="text" name="Name"ngModel 
+                pattern="^[A-Z]+[a-z A-Z]*$" >
+              <span class="focus-input100"></span>
+            </div>
+            <div class="form-group">
+              <label for="name">Gender</label>
+              <select class="form-control"  
+                  name="category" ngModel>
+                  <option disabled selected value>Select Gender</option>
+                  <option value="clothes">Male</option>
+                  <option value="grocery">Female</option>
+                  <option value="toys">Others</option>
+                
+              </select>
+              
+          </div>
+            <div class="form-group">
+              <label for="name">Mobile NO</label>
+              <input type="number" class="form-control"  pattern="[0-9]{10}" name="mobileNo" ngModel
+              >
+             
+          </div>
+           
+          
+            
+  
+  
+            <div class="wrap-input100 validate-input"
+>
+              <span class="label-input100">Email</span>
+              <input class="form-control" placeholder="Enter your Email" type="email" name="email" ngModel>
+              <span class="focus-input100"></span>
+            </div>
+           
+  
+            <!-- Password -->
+            <div class="wrap-input100 validate-input">
+              <span class="label-input100">Password</span>
+              <input class="form-control" placeholder="Enter password" type="password" name="password" ngModel
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                <ion-icon name="eye" color="red" item-end></ion-icon>
+              <span class="focus-input100"></span>
+            </div>
+            
+      
+           
+           
+            <div class="container-login100-form-btn">
+              <div class="wrap-login100-form-btn">
+                <div class="button-container">
+                  <button type="submit"class="btn-solid-reg-sign page-scroll" >
+                    Register
+                  </button>&nbsp;
+                </div>
+  
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

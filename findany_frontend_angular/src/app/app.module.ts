@@ -28,6 +28,9 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { ServicefindAnyComponent } from './servicefind-any/servicefind-any.component';
 import { AdminProductListComponent } from './admin-product-list/admin-product-list.component';
 import { AdminAddProductComponent } from './admin-add-product/admin-add-product.component';
+import { CustomerLoginComponent } from './customer-login/customer-login.component';
+import { CustomerRegestrationComponent } from './customer-regestration/customer-regestration.component';
+import { CustomerServicesComponent } from './customer-services/customer-services.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +42,7 @@ import { AdminAddProductComponent } from './admin-add-product/admin-add-product.
     FooterComponent,
     AdminComponent,
     HomeComponent,
-    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, AdminAddProductComponent,
+    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, AdminAddProductComponent, CustomerLoginComponent, CustomerRegestrationComponent, CustomerServicesComponent,
 
   ],
   imports: [

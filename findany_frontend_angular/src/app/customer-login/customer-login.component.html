@@ -1,0 +1,63 @@
+<style>A {text-decoration: none;} </style>
+
+<div class="login">
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="login100-more" style="background-image: url('assets/images/bg-01.jpg');"></div>
+
+            <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+            
+                <form (ngSubmit)="authenticate(myform.value)"#myform="ngForm" class="login100-form validate-form">
+                    <span class="login100-form-title p-b-50">
+                        Hello Customer!
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Email is required"
+                        >
+                        <span class="label-input100">Email</span>
+                        <input class="form-control" type="text" name="email" ngModel placeholder="Enter the email"
+                            >
+                        <span class="focus-input100"></span>
+                    </div>
+
+                <br>
+                <br>
+                
+                <br>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required"
+                        >
+                        <span class="label-input100">Password</span>
+                        <input class="form-control" type="password" name="password" ngModel
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="*************"
+                    >
+                        <span class="focus-input100"></span>
+                    </div>
+
+                   
+
+                    <br>
+                    <br>
+                    
+                    <br>
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="button-container">
+                                <button type="submit" 
+                                    class="btn-solid-reg-sign page-scroll">
+                                    Login
+                                </button>
+                                <span class="registerlink"><a class="btn btn-info "routerLink="/register">Register</a></span>
+                                
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+</div>

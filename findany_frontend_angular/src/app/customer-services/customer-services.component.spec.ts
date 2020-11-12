@@ -1,21 +1,20 @@
-/** 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BillviewComponent } from './billview.component';
+import { CustomerServicesComponent } from './customer-services.component';
 
-describe('BillviewComponent', () => {
-  let component: BillviewComponent;
-  let fixture: ComponentFixture<BillviewComponent>;
+describe('CustomerServicesComponent', () => {
+  let component: CustomerServicesComponent;
+  let fixture: ComponentFixture<CustomerServicesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BillviewComponent ]
+      declarations: [ CustomerServicesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BillviewComponent);
+    fixture = TestBed.createComponent(CustomerServicesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -23,4 +22,4 @@ describe('BillviewComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});*/
+});
