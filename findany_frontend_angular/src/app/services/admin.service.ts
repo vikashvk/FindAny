@@ -7,15 +7,15 @@ import { Observable } from 'rxJs';
 })
 export class AdminService {
 
-  private baseUrl = 'http://localhost:9292/api/bill-module';
+  private baseUrl = 'http://localhost:8090/product';
 
   constructor(private http: HttpClient) { 
   }
   createProduct(product: Object): Observable<Object> {
     return this.http.post(`${this.baseUrl}` + '/addProduct', product);
   }
-  getAllProductList(serialNo:number): Observable<any> {
-    return this.http.get(`${this.baseUrl}` + '/adminProductList'+serialNo);
+  getAllProductList(): Observable<any> {
+    return this.http.get(`${this.baseUrl}` + '/allproducts');
   }
 
 
