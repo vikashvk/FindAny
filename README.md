@@ -60,9 +60,3 @@ Software Interface:
     2. JAVA development toolkit.
     3. Visual Studio.
     4. MySQL
-    
-Hardware Interface: 
-Hardware requirements for insurance on internet will be same for both parties which are as follows: 
-    • Processor: Dual Core 
-    • RAM:2 GB
-    • Hard Disk:320 GB 
