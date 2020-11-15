@@ -24,7 +24,7 @@ export class AdminProductListComponent implements OnInit {
   }
   reloadData() {
     debugger
-    this.product = this.adminService.getAllProductList();
+    this.product = this.adminService.getAllProductList(this.serialNo);
   }
 
 }
