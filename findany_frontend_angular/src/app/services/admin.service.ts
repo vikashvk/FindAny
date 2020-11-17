@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxJs';
 
 @Injectable({
@@ -11,11 +11,20 @@ export class AdminService {
 
   constructor(private http: HttpClient) { 
   }
+
   createProduct(product: Object): Observable<Object> {
     return this.http.post(`${this.baseUrl}` + '/addProduct', product);
   }
+
   getAllProductList(): Observable<any> {
-    return this.http.get(`${this.baseUrl}` + '/allproducts');
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        // Authorization: 'Bearer ' + token
+      })
+    };
+    return this.http.get(`${this.baseUrl}` + '/allproducts',httpOptions);
   }
 
 
