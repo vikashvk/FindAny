@@ -17,9 +17,9 @@ import com.psa.com.shoppingdemo.entity.Product;
  * @author KIRANKUMAR NARARE
  *
  */
-@RestController("/product")
-@CrossOrigin(allowedHeaders = "*",origins = "http://localhost:4200/")
-
+@CrossOrigin(origins = "http://localhost:4200/")
+@RestController
+@RequestMapping("/product")
 public class ProductController {
 
 private ProductService productService;
