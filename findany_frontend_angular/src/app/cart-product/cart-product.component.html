@@ -1,0 +1,5 @@
+<p>cart-product works!</p>
+<div *ngIf="product">
+    <div>{{product.name}}</div>
+    <input type="number" [(ngModel)]="product.num" min="0" (ngModelChange)="modelChanged($event)"/>
+  </div>

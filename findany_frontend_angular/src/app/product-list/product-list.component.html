@@ -1,0 +1,3 @@
+<p>product-list works!</p>
+<h1>Products</h1>
+<product *ngFor="let product of products" [product]="product" (productAdded)="addProductToCart($event)"></product>

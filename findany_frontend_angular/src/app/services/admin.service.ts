@@ -7,7 +7,7 @@ import { Observable } from 'rxJs';
 })
 export class AdminService {
 
-  private baseUrl = 'http://localhost:8090/product';
+  private baseUrl = 'http://localhost:8090/findany';
 
   constructor(private http: HttpClient) { 
   }
@@ -29,24 +29,25 @@ export class AdminService {
 
 
   getCustomerList(): Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        // Authorization: 'Bearer ' + token
+      })
+    };
     return this.http.get(`${this.baseUrl}` + '/Customers');
   }
 
-  getBillList(): Observable<any> {
-    return this.http.get(`${this.baseUrl}` + '/Bills');
-  }
-  getAllBillByCustId(custId:number): Observable<any> {
-    return this.http.get(`${this.baseUrl}` + '/Bills/all/'+custId);
-  }
 
 
-  deleteBill(id: any): Observable<any>{
-    return this.http.delete(`${this.baseUrl}` + '/deleteBill/' + `${id}`, { responseType : 'text'});
+  deleteProduct(id: any): Observable<any>{
+    return this.http.delete(`${this.baseUrl}` + '/remove/' + `${id}`, { responseType : 'text'});
   }
 
-  editBill(id:number, value:any):Observable<Object>
+  editProduct(id:number, value:any):Observable<Object>
 {
-    return this.http.put(`${this.baseUrl}`+'/updateBill/' + `${id}`, value);
+    return this.http.put(`${this.baseUrl}`+'/update/' + `${id}`, value);
 }
   
   viewBilldetail(id: any):Observable<any>

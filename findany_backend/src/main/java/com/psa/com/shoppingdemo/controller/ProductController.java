@@ -19,7 +19,7 @@ import com.psa.com.shoppingdemo.entity.Product;
  */
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/findany")
 public class ProductController {
 
 private ProductService productService;
