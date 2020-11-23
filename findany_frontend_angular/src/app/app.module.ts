@@ -32,10 +32,8 @@ import { CustomerLoginComponent } from './customer-login/customer-login.componen
 import { CustomerRegestrationComponent } from './customer-regestration/customer-regestration.component';
 import { CustomerServicesComponent } from './customer-services/customer-services.component';
 import { CartProductComponent } from './cart-product/cart-product.component';
-import { ProductListComponent } from './product-list/product-list.component';
+// import { ProductListComponent } from './product-list/product-list.component';
 import { ProductOnlyComponent } from './product-only/product-only.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { ProductCartComponent } from './product-cart/product-cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +46,7 @@ import { ProductCartComponent } from './product-cart/product-cart.component';
     AdminComponent,
     HomeComponent,
     AddProductComponent,
-    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, CustomerLoginComponent, CustomerRegestrationComponent, CustomerServicesComponent, CartProductComponent, ProductListComponent, ProductOnlyComponent, ShoppingCartComponent, ProductCartComponent,
+    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, CustomerLoginComponent, CustomerRegestrationComponent, CustomerServicesComponent, CartProductComponent, ProductOnlyComponent, 
 
   ],
   imports: [
