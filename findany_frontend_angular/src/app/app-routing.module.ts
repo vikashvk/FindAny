@@ -19,6 +19,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { CustomerRegestrationComponent } from './customer-regestration/customer-regestration.component';
 import { CustomerLoginComponent } from './customer-login/customer-login.component';
 import { ShopproductComponent } from './shopproduct/shopproduct.component';
+import { AdminupdateproductComponent } from './adminupdateproduct/adminupdateproduct.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,9 @@ const routes: Routes = [
   },
   {
     path: 'home', component: HomeComponent
+  },
+  {
+    path: 'update', component: AdminupdateproductComponent
   },
   {
     path: 'ourIntro', component: IntroComponent

@@ -10,7 +10,7 @@ export class AdminService {
 
   private baseUrl = 'http://localhost:8081/findany';
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
   }
 
   createProduct(product: Object): Observable<Object> {
@@ -25,7 +25,7 @@ export class AdminService {
         // Authorization: 'Bearer ' + token
       })
     };
-    return this.http.get(`${this.baseUrl}` + '/allproducts',httpOptions);
+    return this.http.get(`${this.baseUrl}` + '/allproducts', httpOptions);
   }
 
 
@@ -41,17 +41,20 @@ export class AdminService {
   }
 
   getProducts() {
-    return this.http.get<Product[]>(`${this.baseUrl}`+'/allproducts');
+    return this.http.get<Product[]>(`${this.baseUrl}` + '/allproducts');
   }
 
-
-  deleteProduct(id: any): Observable<any>{
-    return this.http.delete(`${this.baseUrl}` + '/remove/' + `${id}`, { responseType : 'text'});
+  getProductByid(id: any): Observable<any> {
+    return this.http.get(`${this.baseUrl}` + '/product/' + `${id}`);
   }
 
-  editProduct(id:number, value:any):Observable<Object>
-{
-    return this.http.put(`${this.baseUrl}`+'/update/' + `${id}`, value);
-}
+  deleteProduct(id: any): Observable<any> {
+    return this.http.delete(`${this.baseUrl}` + '/remove/' + `${id}`, { responseType: 'text' });
+  }
+
+  editProduct(id: number, value: any): Observable<Object> {
+
+    return this.http.put(`${this.baseUrl}` + '/update/' + `${id}`, value);
+  }
 
 }

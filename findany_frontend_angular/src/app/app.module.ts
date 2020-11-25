@@ -35,6 +35,7 @@ import { CartProductComponent } from './cart-product/cart-product.component';
 // import { ProductListComponent } from './product-list/product-list.component';
 import { ProductOnlyComponent } from './product-only/product-only.component';
 import { ShopproductComponent } from './shopproduct/shopproduct.component';
+import { AdminupdateproductComponent } from './adminupdateproduct/adminupdateproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,7 @@ import { ShopproductComponent } from './shopproduct/shopproduct.component';
     AdminComponent,
     HomeComponent,
     AddProductComponent,
-    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, CustomerLoginComponent, CustomerRegestrationComponent, CustomerServicesComponent, CartProductComponent, ProductOnlyComponent, ShopproductComponent, 
+    AdminpageComponent, UserLoginComponent, RedirectHandlerComponent, UserRegistrationComponent, PageNotFoundComponent, LogoutComponent, ResetPasswordComponent, ServicefindAnyComponent, AdminProductListComponent, CustomerLoginComponent, CustomerRegestrationComponent, CustomerServicesComponent, CartProductComponent, ProductOnlyComponent, ShopproductComponent, AdminupdateproductComponent, 
 
   ],
   imports: [

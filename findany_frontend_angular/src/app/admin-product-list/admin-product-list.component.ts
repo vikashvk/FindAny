@@ -26,5 +26,14 @@ export class AdminProductListComponent implements OnInit {
     debugger
     this.product = this.adminService.getAllProductList();
   }
+  deleteProduct(id: number) {
+    this.adminService.deleteProduct(id)
+      .subscribe(
+        data => {
+          console.log(data);
+          this.reloadData();
+        },
+        error => console.log(error));
+  }
 
 }
