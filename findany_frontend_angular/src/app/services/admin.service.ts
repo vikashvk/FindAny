@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxJs';
+import { Product } from '../models/Product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AdminService {
 
-  private baseUrl = 'http://localhost:8090/findany';
+  private baseUrl = 'http://localhost:8081/findany';
 
   constructor(private http: HttpClient) { 
   }
@@ -39,6 +40,9 @@ export class AdminService {
     return this.http.get(`${this.baseUrl}` + '/Customers');
   }
 
+  getProducts() {
+    return this.http.get<Product[]>(`${this.baseUrl}`+'/allproducts');
+  }
 
 
   deleteProduct(id: any): Observable<any>{
@@ -48,21 +52,6 @@ export class AdminService {
   editProduct(id:number, value:any):Observable<Object>
 {
     return this.http.put(`${this.baseUrl}`+'/update/' + `${id}`, value);
-}
-  
-  viewBilldetail(id: any):Observable<any>
-{
-  return this.http.get(`${this.baseUrl}`+'/Bills/' + `${id}`);
-}
-
-  getBillByid(id: any): Observable<any> 
-{
-  return this.http.get(`${this.baseUrl}`+'/Bills/' + `${id}`);
-}
-
-  getBillBycustid(id: any): Observable<any> 
-{
-  return this.http.get(`${this.baseUrl}`+'/Billscust/' + `${id}`);
 }
 
 }

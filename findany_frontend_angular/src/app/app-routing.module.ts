@@ -18,6 +18,7 @@ import { AdminProductListComponent } from './admin-product-list/admin-product-li
 import { AddProductComponent } from './add-product/add-product.component';
 import { CustomerRegestrationComponent } from './customer-regestration/customer-regestration.component';
 import { CustomerLoginComponent } from './customer-login/customer-login.component';
+import { ShopproductComponent } from './shopproduct/shopproduct.component';
 
 
 const routes: Routes = [
@@ -29,13 +30,15 @@ const routes: Routes = [
   },
   {
     path: 'ourIntro', component: IntroComponent
-    
-    },
-  
-   {
+
+  },
+  {
+    path: 'shop', component: ShopproductComponent
+  },
+  {
     path: 'ourTeam', component: TeamsComponent
   },
-   {
+  {
     path: 'ourAbout', component: AboutComponent
   },
   {
@@ -47,7 +50,7 @@ const routes: Routes = [
   {
     path: 'login', component: CustomerLoginComponent
   },
-  
+
   {
     path: 'reset-password', component: ResetPasswordComponent
   },
@@ -63,17 +66,17 @@ const routes: Routes = [
     path: 'logout', component: LogoutComponent
   },
   {
-    path:'adminProductList',component:AdminProductListComponent
+    path: 'adminProductList', component: AdminProductListComponent
   },
   {
-    path:'addProductList',component:AddProductComponent
+    path: 'addProductList', component: AddProductComponent
   },
   {
     path: 'user'
     , loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule)
-    , canActivateChild:[AuthGuardService]
+    , canActivateChild: [AuthGuardService]
   },
-  
+
   {
     path: '**', component: PageNotFoundComponent
   }
