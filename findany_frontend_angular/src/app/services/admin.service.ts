@@ -18,14 +18,8 @@ export class AdminService {
   }
 
   getAllProductList(): Observable<any> {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        // Authorization: 'Bearer ' + token
-      })
-    };
-    return this.http.get(`${this.baseUrl}` + '/allproducts', httpOptions);
+  
+    return this.http.get(`${this.baseUrl}` + '/allproducts');
   }
 
 
@@ -55,6 +49,9 @@ export class AdminService {
   editProduct(id: number, value: any): Observable<Object> {
 
     return this.http.put(`${this.baseUrl}` + '/update/' + `${id}`, value);
+  }
+  logOut(){
+    
   }
 
 }
